@@ -1,0 +1,142 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  color: whitesmoke;
+  min-height: 100vh;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  padding: 100px 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a,
+a::visited,
+a::active {
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  margin-inline: auto;
+  background-color: whitesmoke;
+  padding: 16px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.radio__input {
+  display: none;
+}
+
+.radio__label {
+  display: grid;
+  place-content: center;
+  background-color: black;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 500ms ease-in;
+}
+.radio__label:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.radio__input:checked + .radio__label {
+  background-color: red;
+  color: blue;
+}
+
+.container {
+  margin-top: 100px;
+  margin-inline: auto;
+  display: flex;
+  gap: 32px;
+}
+
+.test-container button {
+  padding: 10px 32px;
+}
+
+p {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.active {
+  color: blue;
+}
+
+.active2 {
+  color: red;
+}
+
+.aa, .a {
+  font-size: clamp(1rem, 0.3119266055rem + 2.9357798165vw, 2rem);
+  padding: clamp(1rem, -0.4621559633rem + 6.2385321101vw, 3.125rem);
+  background-color: white;
+  color: black;
+}
+
+.bb, .b {
+  font-weight: 700;
+  color: white;
+  font-size: clamp(2rem, 5.376146789rem + -5.871559633vw, 4rem);
+  padding: clamp(0.5rem, -1.9082568807rem + 10.2752293578vw, 4rem);
+  background-color: gray;
+  text-transform: uppercase;
+}
+
+.cc, .c {
+  font-size: clamp(1rem, 2.6880733945rem + -2.9357798165vw, 2rem);
+  text-transform: uppercase;
+}
+
+.c {
+  background-color: white;
+  color: black;
+  -webkit-padding-before: 18px;
+          padding-block-start: 18px;
+  -webkit-padding-start: 50px;
+          padding-inline-start: 50px;
+  -webkit-margin-after: 100px;
+          margin-block-end: 100px;
+  margin-inline: 20px;
+  background-image: url("../assets/Vector (1).svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 50%;
+}/*# sourceMappingURL=style.css.map */

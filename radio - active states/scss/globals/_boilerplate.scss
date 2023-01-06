@@ -1,0 +1,29 @@
+@use '../utils/functions' as f;
+@use '../utils/breakpoints' as bp;
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: whitesmoke;
+    min-height: 100vh;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}

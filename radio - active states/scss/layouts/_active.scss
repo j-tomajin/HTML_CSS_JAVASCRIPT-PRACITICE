@@ -1,0 +1,28 @@
+.container {
+    margin-top: 100px;
+    margin-inline: auto;
+    display: flex;
+    gap: 32px;
+}
+
+.test-container {
+    button {
+        padding: 10px 32px;
+    }
+}
+
+p {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+.active {
+    color: blue;
+}
+
+.active2 {
+    color: red;
+}

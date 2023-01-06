@@ -1,0 +1,55 @@
+@use '../utils/mixin' as m;
+@use '../utils/functions' as f;
+@use '../utils/fonts' as font;
+
+.aa {
+    font-size: m.clampf(16, 920, 32);
+    padding: m.clampf(16, 920, 50);
+    background-color: white;
+    color: black;
+}
+
+.bb {
+    @include m.text-style(700, white);
+    font-size: m.clampf(64, 920, 32);
+    padding: m.clampf(8, 920, 64);
+    background-color: gray;
+    text-transform: uppercase;
+}
+
+.cc {
+    font-size: m.clampf(32, 920, 16);
+    text-transform: uppercase;
+}
+
+.a {
+    @extend .aa;
+}
+
+.b {
+    @extend .bb;
+}
+
+.c {
+    @extend .cc;
+    @extend %link;
+}
+
+%link {
+    background-color: white;
+    color: black;
+    padding: {
+        block-start: 18px;
+        inline-start: 50px;
+    };
+    margin: {
+        block-end: 100px;
+        inline: 20px;
+    };
+    background: {
+        image: url('../assets/Vector (1).svg');
+        repeat: no-repeat;
+        size: contain;
+        position-x: 50%;
+    };
+}

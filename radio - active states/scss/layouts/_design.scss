@@ -1,0 +1,36 @@
+@use '../utils/functions' as f;
+
+form {
+    display: flex;
+    gap: f.rem(16);
+    margin-inline: auto;
+    background-color: whitesmoke;
+    padding: 16px;
+    height: fit-content;
+}
+
+.radio__input {
+    display: none;
+}
+
+.radio__label {
+    display: grid;
+    place-content: center;
+    background-color: black;
+    width: f.rem(40);
+    height: f.rem(40);
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 500ms ease-in; 
+
+    &:hover{
+        background-color: yellow;
+        color: black;
+    }
+}
+
+.radio__input:checked + .radio__label {
+    background-color: red;
+    color: blue;
+}

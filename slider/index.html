@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIDER</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/style.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="./js/app.js" defer></script>
+
+    <!-- ICONS - FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/6822ccfceb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="slider">
+        <div class="slider__group">
+            <div class="group slider__container" data-index="0" data-status="active">
+                <div class="picture">
+                    <img src="./images/image-gallery-cone.jpg" alt="">
+                </div>
+            </div>
+    
+            <div class="group slider__container" data-index="1" data-status="after">
+                <div class="picture">
+                    <img src="./images/image-gallery-milkbottles.jpg" alt="">
+                </div>
+            </div>
+                
+            <div class="group slider__container" data-index="2" data-status="unknown">
+                <div class="picture">
+                    <img src="./images/image-gallery-orange.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="group slider__container" data-index="3" data-status="unknown">
+                <div class="picture">
+                    <img src="./images/image-gallery-sugarcubes.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="group slider__container" data-index="4" data-status="before">
+                <div class="picture">
+                    <img src="./images/image-tanya-profile.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="slider__buttons">
+            <button id="left" onclick="leftBtn()">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <button id="right" type="button" onclick="rightBtn()">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+    </div>
+</body>
+</html>
